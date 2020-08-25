@@ -1,38 +1,138 @@
-.App {
+  .app__component{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+    margin-right:100px !important;
+    
+    
+  }
+
+
+.profile{
+  display:flex;
+  justify-content: space-around;
+  margin: 20px;
+}
+
+.profile__image > img{
+  flex:0.4;
+  width:200px;
+  height: 200px;
+  border:7px solid #cf0000;
+  border-radius: 50%;
+  object-fit: cover;
+
+ 
+
+}
+
+.profile__text{
+  flex:0.6;
+  margin-left: 40px;
+}
+
+.profile__text__name{
+  display: flex;
+  justify-content: stretch;
+}
+
+.profile__about{
+  display: flex;
+  margin-top:20px;
+  margin-bottom: 30px;
+}
+
+.about{
+  background: red;
+  color: white;
+  border-radius: 30px;
+  text-align: center;
+  padding: 10px;
+}
+
+.profile__review{
+  display: flex;
+}
+
+.about_us{
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+ 
+}
+
+.about_us > button{
+  
+  margin-bottom: 15px;
+  outline: none;
+
+  border-radius: 20px;
+  padding: 15px;
+  background-color: #D0262B ;
+  color: white;
+  box-shadow:rgba(0,0,0,0.3);
+  
+  
+}
+
+.about_us > p{
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: rgb(214, 16, 49);
+}
+
+.respond{
+  margin-top: 40px;
+  display: flex;
+  border: 1px solid wheat;
+  justify-content: space-between;
+  border-radius: 20px;
+  align-items: center;
+  padding:25px ;
+}
+
+.respond__stuff{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.other{
+  border: 1px solid wheat;
+  border-radius: 20px;
+  margin-top: 20px;
+  padding: 20px;
+}
+
+.other > h1{
+  margin-bottom: 10px;
+  color: #be057e;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.other__stuff{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: row;
+  justify-content: space-around;
+  text-align: center;
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+
+
+
+
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+
+    .profile__image > img{
+    margin-right:200px;
   }
-  to {
-    transform: rotate(360deg);
+  .profile__text{
+    margin-left:200px;
   }
 }
